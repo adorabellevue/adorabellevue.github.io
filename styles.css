@@ -30,6 +30,7 @@ h3 {
   margin-bottom: 0.5rem;
 }
 
+/* nav bar */
 .navbar {
   position: fixed;
   top: 0;
@@ -59,36 +60,7 @@ h3 {
   color: #4fffb0;
 }
 
-.project-buttons {
-  margin-top: 1rem;
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.project-class {
-  background-color: #1e2a3a;
-  color: #dce6f2;
-  padding: 0.5rem 1rem;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-  border-bottom: 2px solid transparent;
-  transition: 0.3s ease;
-}
-
-.project-class:hover,
-.project-class.active {
-  border-bottom: 2px solid #4fffb0;
-  color: #4fffb0;
-}
-
-.project-pane {
-  margin-top: 1.5rem;
-  display: none;
-}
-
-/* curiosity section layout */
+/* curiosity section */
 .curiosity-container {
   display: flex;
   gap: 2rem;
@@ -130,5 +102,35 @@ h3 {
 }
 
 .curiosity-pane {
+  display: none;
+}
+
+/* project section */
+.project-buttons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.project-class {
+  background-color: #1e2a3a;
+  color: #dce6f2;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s ease;
+}
+
+.project-class:hover,
+.project-class.active {
+  border-bottom: 2px solid #4fffb0;
+  color: #4fffb0;
+}
+
+.project-pane {
+  margin-top: 1.5rem;
   display: none;
 }
