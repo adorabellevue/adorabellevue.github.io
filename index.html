@@ -20,29 +20,84 @@
   </nav>
 
   <!-- Sections -->
+  <!-- Home -->
   <section id="home" class="section">
     <h1>welcome to my undergraduate honors portfolio</h1>
-    <p>University of Washington | 2021-2025</p>
+    <p>Adora Wu | University of Washington '25</p>
   </section>
 
+  <!-- Learning Statement -->
   <section id="ls" class="section">
     <h2>Learning Statement</h2>
     <p>This is my learning statement.</p>
   </section>
 
+  <!-- Curiosity -->
   <section id="curiosity" class="section">
     <h2>Curiosity</h2>
-    <p>Honors Program and Interdisciplinary Exploration</p>
+    <p>Exploration across disciplines and communities</p>
+    <div class="curiosity-container">
+      <div class="curiosity-buttons">
+        <button class="curiosity-class active" onclick="switchTab(event, 'honors', 'curiosity-class', 'curiosity-pane')">Honors Courses</button>
+        <button class="curiosity-class" onclick="switchTab(event, 'orchestra', 'curiosity-class', 'curiosity-pane')">Orchestra</button>
+        <button class="curiosity-class" onclick="switchTab(event, 'teaching', 'curiosity-class', 'curiosity-pane')">Teaching</button>
+      </div>
+
+      <div class="curiosity-content">
+        <div id="honors" class="curiosity-pane" style="display: block;">
+          <h3>Honors Coursework - Curiosity About Interdisciplinary Exploration</h3>
+          <ul>
+            <li>How to Read E-Literature</li>
+            <li>Improving Population Health through Social Entrepreneurship</li>
+          </ul>
+        </div>
+
+        <div id="orchestra" class="curiosity-pane">
+          <h3>Orchestra - Curiosity About Creativity</h3>
+          <p>text</p>
+        </div>
+
+        <div id="teaching" class="curiosity-pane">
+          <h3>Teaching - Curiosity About Communication</h3>
+          <p>text</p>
+        </div>
+      </div>
+    </div>
   </section>
 
+  <!-- Building-->
   <section id="building" class="section">
     <h2>Building</h2>
     <p>CS Projects and Coursework</p>
+
+    <div class="project-buttons">
+      <button class="project-class active" onclick="switchTab(event, 'project1', 'project-class', 'project-pane')">project 1</button>
+      <button class="project-class" onclick="switchTab(event, 'project2', 'project-class', 'project-pane')">project 2</button>
+      <button class="project-class" onclick="switchTab(event, 'project3', 'project-class', 'project-pane')">project 3</button>
+    </div>
+
+    <div id="project1" class="project-pane" style="display: block;">
+      <h3>project 1</h3>
+      <p>description</p>
+    </div>
+
+    <div id="project2" class="project-pane">
+      <h3>project 2</h3>
+      <p>description</p>
+    </div>
+
+    <div id="project3" class="project-pane">
+      <h3>project 3</h3>
+      <p>description</p>
+    </div>
   </section>
 
+  <!-- Learning -->
   <section id="learning" class="section">
     <h2>Learning</h2>
     <p>Reflection and Looking Forward</p>
   </section>
+
+  <script src="script.js"></script>
 </body>
 </html>

@@ -24,6 +24,12 @@ h2 {
   margin-bottom: 1rem;
 }
 
+h3 {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -51,4 +57,78 @@ h2 {
 
 .navbar a:hover {
   color: #4fffb0;
+}
+
+.project-buttons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.project-class {
+  background-color: #1e2a3a;
+  color: #dce6f2;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s ease;
+}
+
+.project-class:hover,
+.project-class.active {
+  border-bottom: 2px solid #4fffb0;
+  color: #4fffb0;
+}
+
+.project-pane {
+  margin-top: 1.5rem;
+  display: none;
+}
+
+/* curiosity section layout */
+.curiosity-container {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.curiosity-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 200px;
+}
+
+.curiosity-class {
+  background: none;
+  border: none;
+  text-align: left;
+  font-size: 1rem;
+  color: #dce6f2;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  border-left: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.curiosity-class:hover {
+  color: #4fffb0;
+}
+
+.curiosity-class.active {
+  color: #4fffb0;
+  border-left: 3px solid #4fffb0;
+  font-weight: bold;
+}
+
+.curiosity-content {
+  flex: 1;
+}
+
+.curiosity-pane {
+  display: none;
 }
