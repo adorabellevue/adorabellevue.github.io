@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Adora Wu Honors Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-
-  <!-- Navbar -->
   <nav class="navbar">
     <ul>
       <li><a href="#home">Home</a></li>
@@ -18,86 +16,123 @@
       <li><a href="#learning">Learning</a></li>
     </ul>
   </nav>
-
-  <!-- Sections -->
   <!-- Home -->
-  <section id="home" class="section">
-    <h1>welcome to my undergraduate honors portfolio</h1>
-    <p>Adora Wu | University of Washington '25</p>
+  <section id="home" class="section-home">
+    <div class="home-container">
+      <div class="home-text">
+        <h1>welcome to my undergraduate honors portfolio</h1>
+        <p>Adora Wu | University of Washington '25</p>
+      </div>
+      <div class="home-image">
+        <img src="images/adora.jpg" alt="Adora Wu"/>
+      </div>
+    </div>
   </section>
-
   <!-- Learning Statement -->
   <section id="ls" class="section">
     <h2>Learning Statement</h2>
     <p>This is my learning statement.</p>
   </section>
-
   <!-- Curiosity -->
   <section id="curiosity" class="section">
     <h2>Curiosity</h2>
     <p>Exploration across disciplines and communities</p>
     <div class="curiosity-container">
       <div class="curiosity-buttons">
-        <button class="curiosity-class active" onclick="switchTab(event, 'honors', 'curiosity-class', 'curiosity-pane')">Honors Courses</button>
+        <button class="curiosity-class active" onclick="switchTab(event, 'honors', 'curiosity-class', 'curiosity-pane')">Honors</button>
         <button class="curiosity-class" onclick="switchTab(event, 'orchestra', 'curiosity-class', 'curiosity-pane')">Orchestra</button>
         <button class="curiosity-class" onclick="switchTab(event, 'teaching', 'curiosity-class', 'curiosity-pane')">Teaching</button>
       </div>
-
       <div class="curiosity-content">
         <div id="honors" class="curiosity-pane" style="display: block;">
-          <h3>Honors Coursework - Curiosity About Interdisciplinary Exploration</h3>
+          <h3>Honors Coursework <i>- Curiosity About Interdisciplinary Exploration</i></h3>
           <ul>
-            <li>How to Read E-Literature</li>
+            <li>How to Read E-Literature [insert hyperatext essay]</li>
             <li>Improving Population Health through Social Entrepreneurship</li>
           </ul>
         </div>
-
         <div id="orchestra" class="curiosity-pane">
-          <h3>Orchestra - Curiosity About Creativity</h3>
-          <p>text</p>
+          <h3>Orchestra <i>- Curiosity About Creativity</i></h3>
+          <p>Being a violinist in the UW Symphony Orchestra under Dr. Rahbee has been an absolutely incredible experience! Click on the links below to watch some of my favorite 2024-2025 performances.</p>
+          <li><a class="orchestra-link" href="https://youtu.be/gfFdNoXpltA?si=9IwBbQzkIDWhdhbY" target=_blank>Beethoven Symphony No. 5</a></li>
+          <li><a class="orchestra-link" href="https://youtu.be/iEXAt7ZjDhs?si=1sZTCPF_kVM3VzhC" target=_blank>The Haydn Experiene II</a></li>
+          <li><a class="orchestra-link" href="https://youtu.be/YxypP_lbYRI?si=rxXn0-9vyIkRIaES" target=_blank>Mendelssohn Symphony No. 3</a></li>
+          <li><a class="orchestra-link" href="https://youtu.be/-J_jHC2yaro?si=Hd_Ze7xfFE2kVsov" target=_blank>Ravel Daphnis et Chloe Suite No. 2</a></li>
+          <li><a class="orchestra-link" href="https://youtu.be/8b0jwyVHUHo?si=gDAPzYhtnTudunB9" target=_blank>Smetana Sarka</a></li>
+          <li><a class="orchestra-link" href="https://youtu.be/_OKc-oDX0Kk?si=7DUdpr4k64uXO9Dm" target=_blank>Smetana Vltava</a></li>
         </div>
-
         <div id="teaching" class="curiosity-pane">
-          <h3>Teaching - Curiosity About Communication</h3>
+          <h3>Teaching <i>- Curiosity About Communication</i></h3>
           <p>text</p>
         </div>
       </div>
     </div>
   </section>
-
   <!-- Building-->
   <section id="building" class="section">
     <h2>Building</h2>
     <p>CS Projects and Coursework</p>
-
     <div class="project-buttons">
-      <button class="project-class active" onclick="switchTab(event, 'project1', 'project-class', 'project-pane')">project 1</button>
-      <button class="project-class" onclick="switchTab(event, 'project2', 'project-class', 'project-pane')">project 2</button>
-      <button class="project-class" onclick="switchTab(event, 'project3', 'project-class', 'project-pane')">project 3</button>
+      <button class="project-class active" onclick="switchTab(event, 'project1', 'project-class', 'project-pane')">MindMapper</button>
+      <button class="project-class" onclick="switchTab(event, 'project2', 'project-class', 'project-pane')">HintCode</button>
+      <button class="project-class" onclick="switchTab(event, 'project3', 'project-class', 'project-pane')">Capstone</button>
+      <button class="project-class" onclick="switchTab(event, 'project4', 'project-class', 'project-pane')">Rollaball</button>
+      <button class="project-class" onclick="switchTab(event, 'project5', 'project-class', 'project-pane')">Data Vis</button>
+      <button class="project-class" onclick="switchTab(event, 'project6', 'project-class', 'project-pane')">Deep Learning</button>
+      <button class="project-class" onclick="switchTab(event, 'project7', 'project-class', 'project-pane')">HCI Prototype</button>
     </div>
-
     <div id="project1" class="project-pane" style="display: block;">
-      <h3>project 1</h3>
-      <p>description</p>
+      <h3>MindMapper</h3>
+      <p>A minimal web app that turns natural language prompts into visual, interactive mind maps using Gemini AI. Built with Next.js and React.js.</p>
+      <img src="images/mindmapper.png" alt="MindMapper" class="project-image"/>
     </div>
-
     <div id="project2" class="project-pane">
-      <h3>project 2</h3>
-      <p>description</p>
+      <h3>HintCode <span class="project-detail">-- CSE403 Software Engineering</span></h3>
+      <p>A Chrome extension that generates hints for LeetCode problems, powered by Gemini AI.</p>
+      <a href="https://github.com/RHP1174/HintCode"
+        target="_blank" 
+        title="GitHub">
+        GitHub
+      </a>
+      <img src="images/hintcode.jpg" alt="HintCode" class="project-image"/>
     </div>
-
     <div id="project3" class="project-pane">
-      <h3>project 3</h3>
+      <h3>Interview Assistant <span class="project-detail">-- CSE481 HAI Capstone</span></h3>
+      <p></p>
+      <img src="images/[IMAGE]" alt="Project 3" class="project-image"/>
+    </div>
+    <div id="project4" class="project-pane">
+      <h3>Rollaball <span class="project-detail">-- CSE457 Computer Graphics</span></h3>
+      <p>My first Unity game.</p>
+      <img src="images/rollaball.png" alt="Rollaball" class="project-image"/>
+      <img src="images/rollaball2.png" alt="Rollaball" class="project-image"/>
+    </div>
+    <div id="project5" class="project-pane">
+      <h3>Fragile States <span class="project-detail">-- CSE442 Data Visualization</span></h3>
+      <p>My group's final project for this class was on Fragile State Index (FSI). It is deployed <a href="https://fragilestates-cse442-24au-fp-9900397599e5134d27791820d29cfb89ce.pages.cs.washington.edu" target=_blank>here!</a></p>
+    </div>
+    <div id="project6" class="project-pane">
+      <h3>VATT Model Refined <span class="project-detail">-- CSE493 Deep Learning</span></h3>
+      <p>text</p>
+      <img src="images/vatt.png" alt="VATT" class="project-image"/>
+    </div>
+    <div id="project7" class="project-pane">
+      <h3>HCI Prototype <span class="project-detail">-- CSE440 Introduction to HCI</span></h3>
       <p>description</p>
+      <a href="https://www.canva.com/design/DAF-HIu3Z3E/J6J0B8ATgU46MOAJNQNb1g/edit?utm_content=DAF-HIu3Z3E&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" 
+        target="_blank" 
+        title="Final Presentation Slides">
+        Final Presentation Slides
+      </a>
+      <img src="images/restpad-paper-prototype.png" alt="RestPad" class="project-image"/>
     </div>
   </section>
-
   <!-- Learning -->
   <section id="learning" class="section">
-    <h2>Learning</h2>
-    <p>Reflection and Looking Forward</p>
+    <h2>Learning and Reflection</h2>
+    <li>Current interests in tech</li>
+    <li>Appreciation for support and family</li>
   </section>
-
   <script src="script.js"></script>
 </body>
 </html>
