@@ -7,9 +7,9 @@ body {
 }
 .section {
   padding: 4rem;
-  margin-bottom: 12rem;
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 16rem;
 }
 .section-home {
   padding: 4rem 2rem;
@@ -20,7 +20,7 @@ body {
   justify-content: center;
 }
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   color: #4fffb0;
 }
 h2 {
@@ -31,6 +31,9 @@ h3 {
   font-size: 1.2rem;
   color: #ffffff;
   margin-bottom: 0.5rem;
+}
+p {
+  font-size: 1.25rem;
 }
 
 /* nav bar */
@@ -68,18 +71,16 @@ h3 {
   gap: 2rem;
   align-items: center;
   flex-wrap: wrap;
+  margin-bottom: 56px;
 }
 .home-text {
   flex: 2;
-  width: 700px;
-}
-.home-image {
-  flex: 1;
-  min-width: 250px;
-  text-align: center;  
+  width: 100%;
+  max-width: 500px;
+  margin-right: 80px;
 }
 .home-image img {
-  width: 300px;
+  width: 280px;
   height: auto;
   border-radius: 1rem;
   box-shadow: 0 0 20px rgba(0,0,0,0.3);
@@ -120,6 +121,7 @@ h3 {
 }
 .curiosity-content {
   flex: 1;
+  max-width: 800px;
 }
 .curiosity-pane {
   display: none;
@@ -162,8 +164,8 @@ h3 {
 }
 .project-image {
   margin-top: 1rem;
-  max-width: 600px;
-  height: auto;
+  width: 100%;
+  max-width: 800px;
   border-radius: 0.75rem;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
 }
